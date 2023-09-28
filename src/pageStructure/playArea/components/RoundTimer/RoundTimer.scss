@@ -1,0 +1,25 @@
+.round-timer {
+  display: flex;
+  justify-content: center;
+
+  .countdown-number {
+    font-size: 4rem;
+    display: inline;
+
+    color: $offBlack;
+    background-image: url("./assets/main/moon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: none;
+    user-select: none;
+  }
+}

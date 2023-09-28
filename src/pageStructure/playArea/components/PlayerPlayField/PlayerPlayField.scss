@@ -1,0 +1,48 @@
+.players-play-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .player-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+
+    img {
+      width: clamp(5rem, 40vw, 40rem);
+      user-select: none;
+      transform-origin: bottom center;
+      
+      position: relative;
+    }
+
+    #player1Hand.animate {
+      animation: swapAnimation 0.5s 1;
+    }
+
+    #player2Hand.animate {
+      animation: swapAnimation 0.5s 1;
+    }
+  }
+
+  .player-info-wrapper:nth-child(even) {
+    img {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+@keyframes swapAnimation {
+    0% {
+      top: 0;
+    }
+  
+    50% {
+      top: 40px;
+    }
+  
+    100% {
+      top: 0px;
+    }
+  }
+

@@ -1,0 +1,39 @@
+#root, body, html {
+    height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  max-width: 1700px;
+
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: $titleFont;
+  color: $offWhite;
+  text-shadow: 2px 2px 2px rgba(126, 14, 107, 0.507);
+}
+
+body {
+  background: url("./assets/main/background_image.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::selection {
+  background: rgb(255, 184, 51);
+  color: rgb(95, 12, 63);
+}

@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+@import './main.scss';
+
+// Header
+@import './pageStructure/header/Header.scss';
+
+// Play area + components
+@import './pageStructure/playArea/PlayArea.scss';
+@import './pageStructure/playArea/components/PlayerPlayField/PlayerPlayField.scss';
+@import './pageStructure/playArea/components/PlayerScore/PlayerScore.scss';
+@import './pageStructure/playArea/components/RoundTimer/RoundTimer.scss';
